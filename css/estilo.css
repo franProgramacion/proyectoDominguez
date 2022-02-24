@@ -1,0 +1,913 @@
+/* Reseteo de valores por defecto */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header, main, footer{
+    min-width: 100vw;
+    background: linear-gradient(0deg, rgba(22,0,0,1) 0%, rgba(161,1,0,1) 33%, rgba(254,101,13,1) 66%, rgba(255,233,162,1) 99%);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Comienzo de estilos generales para el header */
+
+header{
+    height: 180px;
+    background-image: url(../imagenes/banner.png);
+    background-position: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+/* Cabecera */
+#titulo{
+    height: 75px;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+}
+h1{
+    color: rgb(255, 206, 70);
+    font-family: 'Roboto', sans-serif;
+}
+/* menu de navegacion realizado con FLEX */
+nav{
+    width: 100%;
+    height: 40px;
+    background-color: #2c2c2c;
+    margin-top: 65px;
+}
+#menuFlex{
+    list-style-type: none;
+    margin-top: 15px;
+    display: flex;
+}
+#menuFlex :hover{
+    background-color: #d33030;
+    height: 40px;
+}
+
+/* fin menu de navegacion */
+/* Fin de estilos para el Header */
+/* Ancho de Main de las distintas paginas del sitio*/
+
+
+#mainEjercicios{
+    height: 3100px;
+}
+
+/* Estilos generales pagina principal index */
+
+
+p{
+    font-family:'Open Sans', sans-serif;
+}
+#imagenInicio{
+    margin: 30px 50px;
+    width: 90%;
+    height: 60%;
+}
+#introduccion{
+    display: flex;
+    height: 600px; 
+    margin-top: 200px;
+} 
+.cajaFlex{
+    width: 30%;
+    height: 600px;
+    background-color: rgb(41, 23, 2);
+    margin-left: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgb(219, 99, 19);
+    margin: 10px;
+}
+
+/* Seccion 1 guias*/
+#seccionGuias1{
+    width: 1200px;
+    height: 800px;
+    text-align: center;
+}
+#videoInicio{
+    width: 600px;
+    height: 300px;
+}
+/* Seccion 1 ejercicios */
+
+#contenedor{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 1200px;
+    height: 800px;
+    background-color: #ff2407;
+    justify-content: space-between;
+}
+#videoEjercicios{
+    height: 50%;
+    width: 50%;
+    order: 2;
+}
+#imagenEjercicio{
+    width: 40%;
+    height: 40%;
+    background-color: aqua;
+    order: 1;
+}
+#textoEjercicio{
+    width: 40%;
+    height: 40%;
+    background-color: bisque;
+    order: 3;
+}
+/*Fin seccion 1 ejercicios*/
+/* Inicio seccion 1: contacto */
+#cajaInformacion{
+    width: 1000px;
+    height: 400px;
+    margin-left: 80px;
+    padding-top: 80px;
+    background-color: dimgray;
+}
+
+/* botonera guias.html 
+#botonera{
+    width: 700px;
+    height: 60px;
+    background-color: #ff471a;
+    margin: 40px 20px 20px 250px;
+}
+#botonera ul li{
+    display: inline-block;
+    text-align: center;
+}
+#botonera ul li a{
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+} */
+/* fin botonera */
+/* Inicio seccion 2 guias */
+#mainGuias{
+    height: 3600px; 
+}
+
+#containerGrid{
+    height: 2500px;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    grid-template-rows: 400px 400px 500px 200px 400px; 
+    justify-content: space-around;
+    background-color: lightsteelblue;
+    row-gap: 40px;
+    column-gap: 20px;
+    grid-template-areas: 'a1 a1 a1 a1 a1'
+                         'a2 a2 a2 a2 a2'
+                         'a3 a3 a3 a4 a4'
+                         'a5 a6 a7 a8 a9'
+                         'a10 a10 a10 a10 a10';
+
+}
+#hijoGrid1{
+    background-color: rgb(170, 169, 245);
+    grid-area: a1;
+    margin-top: 50px;
+}
+.editarImagenes{
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#hijoGrid2{
+    background-color: #ff2407;
+    grid-area: a2;
+    width: 90%;
+    margin-top: 100px;
+}
+#hijoGrid3{
+    background-color: aqua;
+    grid-area: a3;
+}
+#hijoGrid4{
+    background-color: blueviolet;
+    grid-area: a4;
+}
+#hijoGrid5{
+    background-color: lime;
+    grid-area: a5;
+}
+#hijoGrid5 :hover{
+    transform: scale(1.5,1.5) translate(50px);
+}
+#hijoGrid6{
+    background-color: darkviolet;
+    grid-area: a6;
+}
+#hijoGrid6 :hover{
+    transform: scale(1.5,1.5);
+}
+#hijoGrid7{
+    background-color: lightpink;
+    grid-area: a7;
+}
+#hijoGrid7 :hover{
+    transform: scale(1.5,1.5);
+}
+#hijoGrid8{
+    background-color: palegoldenrod;
+    grid-area: a8;
+}
+#hijoGrid8 :hover{
+    transform: scale(1.5,1.5);
+}
+#hijoGrid9{
+    background-color: midnightblue;
+    grid-area: a9;
+}
+#hijoGrid9 :hover{
+    transform: scale(1.5,1.5) translate(-50px);
+}
+#hijoGrid10{
+    background-color: seagreen;
+    grid-area: a10;
+}
+
+/* Fin GRID pagina guias */
+/*Inicio seccion 2 ejercicios */
+
+
+#contenedorEjercicios{
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    height: 1200px;
+    background-color: chocolate;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+#textoEjercicios{
+    width: 90%;
+    height: 200px;
+    background-color: darkgray;
+}
+#imagenesEjercicios{
+    width: 90%;
+    height: 70%;
+    background-color: mediumaquamarine;
+
+}
+/*Fin seccion 2 ejercicios */
+/* Inicio seccion 2 contactos */
+
+#infoExtra{
+    height: 800px;
+    width: 40%;
+    display: inline-block;
+    background-color: lightcoral;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+#formulario{
+    height: 400px;
+    width: 50%;
+    display: inline-block;
+    background-color: khaki;
+    margin-left: 40px;
+}
+/* Fin seccion 2 contactos */
+/* Inicio seccion 3 ejercicios */
+
+#contenedorFrames{
+    display: flex;
+    height: 1000px;
+    width: 1200px;
+    background-color: honeydew;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#frame1{
+    width: 80%;
+    height: 40%;
+    background-color: rgb(184, 120, 47);
+}
+#frame2{
+    width: 80%;
+    height: 40%;
+    background-color: indigo;
+}
+/*Fin seccion 3 ejercicios */
+/*Pie de pagina. Esta incompleto. Me falta mejorar el estilo*/
+footer{
+    height: 150px;
+    background-color: rgb(0, 0, 0);
+}
+#pieDePagina{
+    display: flex;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    font-size: 35px;
+    color: rgb(230, 36, 36);
+}
+#desarrollador{
+    color: rgb(230, 36, 36);
+    font-size: 20px;
+}
+/* Fin pie de pagina */
+/* INICIO MEDIA QUERYS */
+/* Inicio Media querys para dispositivos moviles */
+@media only screen and (max-width: 600px){
+    /* Aspectos generales de la pagina web */
+    header, main, section, footer{
+        max-width: 599px;
+    }
+    /*header */
+    header {
+        height: 120px;
+        width: 100vh;
+    }
+    h1{
+        font-size: 30px;
+    }
+    body{
+        background-image:none;
+        width: 100vh;
+    }
+    /* fin header */
+    /* menu de navegacion */
+    nav{
+        max-width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    #menuFlex{
+        flex-direction: column;
+        list-style-type: none;
+    }
+    ul li{
+        width: 25%;
+        text-align: center;
+    
+    }
+    ul li a{
+        text-decoration: none;
+        width: 150px;
+        font-size: 20px;
+        text-align: center;
+        color: #ff9f46;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+    /* Fin menu navegacion */
+    /* media querys para la pagina index */
+    main{
+        height: 3000px;
+        width: 100vh;
+    }
+    h2{
+        font-size: 30px;
+        color: rgb(83, 44, 12);
+        text-align: center;
+        padding-top: 40px;
+        margin-top: 150px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    #imagenInicio{
+        width: 500px;
+        height: 300px;
+        margin-left: 5px;
+    }
+    #cajaTexto{
+        margin: 20px;
+        border: 2px solid;
+        padding: 5px;
+        height: 200px;
+        max-width: 80%;
+    }
+    #imagenCentro{
+        width: 90%;
+
+    }
+    #segundaImagen{
+        width: 90%;
+        height: 400px;
+    }
+    #introduccion{
+        max-width: 599px;
+    } 
+    .cajaFlex{
+        height: 800px;
+        margin-left: 10px;
+    }
+    
+    h3{
+        font-size: 20px;
+    }
+    .textoHome{ 
+        max-height: 75%;
+        font-size: 15px;
+        text-align: center;
+        color: rgb(255, 120, 30);
+        padding-bottom: 100px;
+    }
+    .ajustarImagen{
+        width: 90%; 
+        max-height: 25%; 
+        margin-top: 10px;
+    } 
+    /* fin media querys pagina index */
+    /* media querys para footer. COMPLETAR */
+    footer{
+        width: 100%;
+    }
+    #pieDePagina{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    a{
+        text-decoration: none;
+        font-size: 25px;
+    }
+}
+    /* fin media querys para footer */
+/* Inicio media querys para la pagina historia.html */
+#mainHistoria{
+    height: 3700px;
+    margin-top: 50px;
+}
+
+.contenedorFlex{
+    display: flex;
+    flex-direction: row;
+    height: 2500px;
+    width: 599px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#hijoFlex1{
+    padding-top: 100px;
+    height: 400px;
+    width: 80%;
+
+}
+#imagenOrigen{
+    width: 80%;
+    height: 80%;
+}
+.descripcionImagen1{
+    width: 80%;
+}
+#hijoFlex2{
+    height: 400px;
+    width: 80%;
+    margin-top: 100px;
+}
+#imagenActualidad{
+    width: 80%;
+    height: 80%;
+}
+
+.descripcionImagen2{
+    width: 80%;
+}
+
+#hijoFlex3{
+    margin-top: 100px;
+    height: 20%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#leyenda{
+    width: 80%;
+    height: 40%;
+    
+}
+.textoHistoria{
+    width: 80%;
+    height: 30%;
+}
+#hijoFlex4{
+    margin-top: 100px;
+    height: 20%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#lineaDeTiempo{
+    width: 80%;
+    height: 40%;
+}
+#hijoFlex5{
+    margin-top: 100px;
+    height: 20%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#fide{
+    width: 80%;
+    height: 50%;
+}
+#hijoFlex6{
+    margin-top: 100px;
+    height: 20%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#ajedrezArgentina{
+    width: 80%;
+    height: 50%;
+}  
+/* Fin media query pagina historia */
+/* Fin media querys para dispositivos moviles */
+/* Inicio media querys para tablets o dispositivos medios */
+@media only screen and (min-width: 600px){
+/* media querys para el menu de navegacion */
+    ul li{
+        width: 25%;
+        text-align: center;
+    
+    }
+    ul li a{
+        text-decoration: none;
+        width: 150px;
+        font-size: 20px;
+        text-align: center;
+        color: #ff9f46;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+/* fin media querys para el menu de navegacion */
+/* Inicio media querys para el main de la pagina index.html */
+    main{
+        height: 2500px;
+    }
+    h2{
+        font-size: 30px;
+        color: rgb(185, 28, 0);
+        text-align: center;
+        padding-top: 80px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    #imagenInicio{
+        margin: 30px 30px;
+        width: 90%;
+    }
+    #cajaTexto{
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        border: 3px solid;
+        padding: 10px;
+        height: 150px;
+        width: 90%;
+    }
+    #imagenCentro{
+        height: 500px;
+        max-width: 991px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #segundaImagen{
+        width: 75%;
+        height: 400px;
+    }
+    .textoHome{
+        max-height: 60%;
+        font-size: 15px;
+        margin: 10px;
+        text-align: justify;
+        color: rgb(255, 120, 30);
+    }
+    .ajustarImagen{
+        width: 80%; 
+        height: 30%;
+        margin-top: 20px;  
+    } 
+    h3{
+        font-size: 20px;
+    }
+    /* fin media querys seccion index */
+    /* Inicio media querys seccion historia */
+    .contenedorFlex{
+        display: flex;
+        flex-direction: row;
+        height: 2500px;
+        width: 599px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #hijoFlex1{
+        padding-top: 100px;
+        height: 400px;
+        width: 80%;
+    
+    }
+    #imagenOrigen{
+        width: 80%;
+        height: 80%;
+    }
+    .descripcionImagen1{
+        width: 80%;
+    }
+    #hijoFlex2{
+        height: 400px;
+        width: 80%;
+        margin-top: 100px;
+    }
+    #imagenActualidad{
+        width: 80%;
+        height: 80%;
+    }
+    
+    .descripcionImagen2{
+        width: 80%;
+    }
+    
+    #hijoFlex3{
+        margin-top: 100px;
+        height: 20%;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #leyenda{
+        width: 80%;
+        height: 40%;
+        
+    }
+    .textoHistoria{
+        width: 80%;
+        height: 30%;
+    }
+    #hijoFlex4{
+        margin-top: 100px;
+        height: 20%;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #lineaDeTiempo{
+        width: 80%;
+        height: 40%;
+    }
+    #hijoFlex5{
+        margin-top: 100px;
+        height: 20%;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #fide{
+        width: 80%;
+        height: 50%;
+    }
+    #hijoFlex6{
+        margin-top: 100px;
+        height: 20%;
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #ajedrezArgentina{
+        width: 80%;
+        height: 50%;
+    }  
+}
+/* Fin media querys seccion historia */
+/* Fin media querys para dispositivos medios o tablet */
+/* Inicio media querys para pc */
+
+@media only screen and (min-width: 992px){
+
+/* media querys para menu de navegacion */
+    ul li{
+        width: 25%;
+        text-align: center;
+    
+    }
+
+    ul li a{
+        text-decoration: none;
+        width: 150px;
+        font-size: 20px;
+        text-align: center;
+        color: #ff9f46;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+
+/* fin media querys para menu de navegacion */
+/* inicio media querys para index.html */
+    main{
+        height: 2500px;
+    }
+    h2{
+        font-size: 30px;
+        color: rgb(185, 28, 0);
+        text-align: center;
+        padding-top: 80px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    #imagenInicio{
+        margin: 30px 50px;
+        width: 90%;
+        height: 60%;
+    }
+    #cajaTexto{
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        border: 5px solid;
+        padding: 10px;
+        height: 200px;
+        width: 90%;
+    }
+    #imagenCentro{
+        height: 600px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    #segundaImagen{
+        width: 75%;
+        height: 600px;
+    }
+    .textoHome{
+        max-height: 60%;
+        font-size: 20px;
+        margin: 10px;
+        text-align: justify;
+        color: rgb(255, 255, 255);
+    }
+    .cajaFlex{
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+   
+    .ajustarImagen{
+        width: 80%; 
+        height: 250px;
+        margin-top: 20px;  
+    } 
+    /* fin media querys para index.html */
+    /* Inicio media querys para historia.html */
+    #mainHistoria{
+        height: 3000px;
+        margin-top: 50px;
+        min-width: 100%;
+    }
+    .contenedorFlex{
+        display: flex;
+        flex-direction: row;
+        height: 2000px;
+        width: 100vw;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #hijoFlex1{
+        height: 500px;
+        width: 50%;
+    }
+    #imagenOrigen{
+        width: 80%;
+        height: 80%;
+    }
+    .descripcionImagen1{
+        width: 80%;
+    }
+    #hijoFlex2{
+        height: 500px;
+        width: 50%;
+    }
+    #imagenActualidad{
+        width: 80%;
+        height: 80%;
+    }
+    
+    .descripcionImagen2{
+        width: 80%;
+    }
+    
+    #hijoFlex3{
+        height: 20%;
+        width: 100vw;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+    
+    }
+    #leyenda{
+        width: 30%;
+        height: 60%;
+    
+    }
+    .textoHistoria{
+        width: 50%;
+        padding-left: 50px;
+        height: 40%;
+    }
+    #hijoFlex4{
+        height: 20%;
+        width: 90%;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+    }
+    #lineaDeTiempo{
+        width: 50%;
+        height: 50%;
+    }
+    #hijoFlex5{
+        height: 20%;
+        width: 90%;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+    }
+    #fide{
+        width: 40%;
+        height: 50%;
+    }
+    #hijoFlex6{
+        height: 20%;
+        width: 90%;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    #ajedrezArgentina{
+        width: 40%;
+    }
+}
+/*fin media querys para historia.html */
+/* Fin media querys para pc */
+
