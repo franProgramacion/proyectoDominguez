@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guias</title>
+     <!--Inicio Bootstrap-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
      <!--Insercion de CSS en Html-->
      <link rel="stylesheet" href="../css/estilo.css">
      <!-- Inicio de fuentes de texto externas de google fonts-->
@@ -37,20 +40,21 @@
             <p>Este video es propiedad del canal Reydama al que puedes acceder con el siguiente link:</p> -->
         </section>
             <!--Fin primera seccion-->
-
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a href="#reglas" class="btn btn-dark">Reglas</a>
+                <a href="#piezas" class="btn btn-dark">Piezas</a>
+                <a href="#estrategia" class="btn btn-dark">Estrategia</Em></a>
+                <a href="#movEsp" class="btn btn-dark">Movimientos especiales</a>
+                <a href="#tutoriales" class="btn btn-dark">Video tutoriales</a>
+              </div>
             <!-- Menu de navegacion tipo botonera que lleve a los distintos tutoriales-->
-            <nav id="botonera">
-                <ul>
-                    <li><a href="#reglas">Reglas</a> </li>
-                    <li><a href="#piezas">Piezas</a> </li>
-                    <li><a href="#estrategia">Estrategia y tactica</a></li>
-                </ul>
-            </nav> 
+            
         <!--Seccion 2: Guias, cada una con un diseño diferente organizadas en cajas-->
         <section> 
             <div id="containerGrid">
             <!--Guia 1-->
                 <div id="hijoGrid1"> 
+                    <h3 id="reglas">Reglas</h3>
                     <img src="../imagenes/reglas.jpg" alt="reglas" class="editarImagenes">
                 </div>
                 <div id="hijoGrid2"> 
@@ -58,7 +62,8 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum possimus ducimus dolorum eveniet corporis error est neque iste! Eius sunt ullam aliquid recusandae ut doloremque delectus magnam obcaecati quia ratione.
                 </div>
             <!--Guia 2-->
-                <div id="hijoGrid3"> hijo3
+                <div id="hijoGrid3">
+                    <h3 id="piezas">Piezas</h3>
                     <p id="textoPiezas">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione autem maiores, fugiat ea corrupti omnis optio! Praesentium natus eligendi, similique corrupti corporis minima iusto! Harum dolorum mollitia nihil non. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque aliquid sint blanditiis nihil quisquam deserunt porro, nemo a excepturi quam ipsam, mollitia voluptatibus. Culpa, at ullam minus reiciendis perferendis deleniti?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque asperiores error vel ullam nam, ad tempore, maxime eius nihil optio ea voluptas repellendus quos quam explicabo dolorem! Nulla, amet consequuntur?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati voluptatem rem quaerat exercitationem ipsam, nam nesciunt doloremque laborum impedit odio est sequi tenetur consequatur maiores explicabo molestias molestiae quia beatae!</p></div> 
                 <div id="hijoGrid4"> hijo4
                      <img src="../imagenes/movPeon.jpg" alt="Movimiento peon" id="imgMovPeon">
@@ -77,13 +82,21 @@
                      <img src="../imagenes/movRey.jpg" alt="Movimiento rey" class="editarImagenes"> 
                 </div>
             <!--</article>-->
-            <div id="hijoGrid10"> hijo10
+            <div id="hijoGrid10">
+                <h3 id="estrategia">Estrategia</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis repellat maxime officiis ab repudiandae nobis, quidem sunt adipisci facere id laborum velit tempore quo eaque veniam recusandae? Voluptatum, totam magnam!</p>
             </div>
         </div>
         </section>
         <section>
+            <div id="textMovEs">
+                <h3 id="movEsp">Movimientos especiales</h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio consectetur quibusdam delectus exercitationem doloribus amet quidem! Repellendus obcaecati cum earum exercitationem minus qui iusto, hic eveniet! Voluptate obcaecati quod quis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate velit omnis corporis quod laborum facilis ut sapiente pariatur quibusdam ullam? Incidunt dolorum quaerat commodi dolor perferendis obcaecati totam at quibusdam.</p>
+            </div>
+        </section>
+        <section>
             <!--Inicio seccion 3: Iframes de paginas de youtube recomendadas para inicializarse en ajedrez. Colocar creditos correspondientes-->
-            <h2>Canales en youtube que enseñan ajedrez</h2>
+            <h3 id="tutoriales">Videos tutoriales</h3>
             <h3>Reydama</h3>
             <iframe width="642" height="361" src="https://www.youtube.com/embed/Kti3oKIZ8Mw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>" 
             <h3>Pepe Cuenca</h3>
