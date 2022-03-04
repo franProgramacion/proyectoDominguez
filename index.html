@@ -23,7 +23,7 @@
         <nav>
             <!--Menu de navegacion: inicio, historia, guias, noticias, contacto -->
             <ul id="menuFlex">
-                <li><a href="index.html">Inicio</a> </li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="html/historia.html">Historia</a> </li>
                 <li><a href="html/guias.html"> Guias</a> </li>
                 <li><a href="html/ejercicios.html">Ejercicios</a></li>
@@ -36,9 +36,23 @@
             <!-- Primera seccion enfocada en una breve presentacion con foto (la elegida es transitoria, buscare otra de mejor calidad)y texto-->
                 <h2>INICIO</h2>
                 <img src="imagenes/ajedrezInicio.svg" alt="tablero de ajedrez" id="imagenInicio">
-                <div id="cajaTexto"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nulla dolorem obcaecati officiis, unde accusamus sed. Suscipit, atque dolor maxime officiis explicabo nemo omnis odit similique distinctio ipsum commodi! Ipsa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore est quidem voluptate? Sunt natus in numquam, doloremque fugiat aliquam unde nam adipisci quibusdam ullam. Minus ea earum ullam dolores mollitia.</p></div>  
+                <div class="cajaTexto hvr-back-pulse">
+                    <h3>Bienvenidos a Ajedrez On fire!!</h3>
+                    <h4>¿Quienes somos?</h4>
+                    <p> Somos un sitio de ajedrez enfocado al aprendizaje de ajedrez para aquellos que recien se estan iniciando. Nuestro objetivo es enseñar de manera didactica y divertida los fundamentos del ajedrez y las nociones basicas para que puedan jugar sus primeras partidas. Te propondremos semanalmente una serie de ejercicios para resolver y te ayudaremos en el desarrollo de los mismos.</p>
+                </div>  
+                <p class="placeholder-glow">
+                    <span class="placeholder col-10"></span>
+                  </p>
                 <div id="imagenCentro">
                 <img src="imagenes/ajedrez.jpg" alt="ajedrez" id="segundaImagen" ></div>
+                <div class="cajaTexto hvr-back-pulse">
+                    <h4>¿Como se juega?</h4>
+                    <p>Ajedrez es un juego para dos jugadores que se reparten fichas de dos colores: blancas y negras. Las piezas se colocan en un tablero de 8 filas por 8 columnas en las cuales se alternan los colores blancos y negros aunque tambien pueden haber otros colores. Lo importante es que hay piezas de color oscuro y otras de color blanco para diferenciarse El jugador que tiene las piezas blancas es quien empieza el juego. El objetivo es producir un "jaque mate", generar una jugada en la cual el rey del oponente no tenga movimientos. Todo esto se detalla con claridad a continuacion. </p>
+                </div>
+                <p class="placeholder-glow">
+                    <span class="placeholder col-10"></span>
+                  </p>
             <!--Fin primera seccion-->
         </section>
         <section> 
@@ -47,18 +61,29 @@
             <!-- tres imagenes con su respectivo texto-->
             <article class="cajaFlex">
                 <img src="imagenes/piezas.png" alt="piezas de ajedrez" class="ajustarImagen">
-                <h3>Piezas</h3>
-                <p class="textoHome">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti numquam porro, dolor id magni ab ipsa nemo eius officiis dolore in quibusdam, cupiditate ipsum molestias rerum commodi reprehenderit minus architecto!</p>
+                <h3 class="titulosCajaFlex">Piezas</h3>
+                <p class="textoHome">En total hay 32 piezas, 16 para cada bando. Estas piezas son: 
+                <ul id="listaPiezas">
+                    <li>Peon</li>
+                    <li>Caballo</li>
+                    <li>Alfil</li>
+                    <li>Torre</li>
+                    <li>Reina</li>
+                    <li>Rey</li>
+                </ul>
+            </p>
             </article>
             <article class="cajaFlex">
                 <img src="imagenes/tablero.jpg" alt="Tablero" class="ajustarImagen">
-                <h3>Tablero</h3>
-                <p class="textoHome">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo numquam ipsum aperiam odit inventore et dolorem harum. Quisquam dolorum quas quaerat nemo! Eum natus reiciendis placeat minus perferendis dolore iste!</p>
+                <h3 class="titulosCajaFlex">Tablero</h3>
+                <p class="textoHome">El tablero esta conformado por 64 casillas. Como vemos en la imagen, las casillas se dividen en color oscuro y color claro. Tradicionalmente eran de color a blanco, pero eso no impidio que se puedan encontrar piezas y tableros de otro colores. Aunque siempre respetando el principio de combinacion de colores oscuros y claros.</p>
+                <p class="textoHome">El tablero tiene una nomenclatura. Cada celda esta representada por una letra y un numero que van desde la a hasta la h y desde el 1 hasta el 8. La nomenclatura se utiliza para anotar los movimientos de los jugadores</p>
+                <p class="textoHome">Otra cuestion a tener en cuenta es que cada pieza solo puede ocupar un casillero. No puede haber dos piezas ubicadas en el mismo.</p>
             </article>
             <article class="cajaFlex">
                 <img src="imagenes/jaquemate.jpg" alt="objetivo jaquemate" class="ajustarImagen">
-                <h3>¿Como se juega?</h3>
-                <p class="textoHome">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo labore perferendis quaerat earum accusantium! Eveniet perspiciatis cumque optio, quae doloremque error molestias temporibus hic eligendi reiciendis corrupti, excepturi laudantium laboriosam.</p>
+                <h3 class="titulosCajaFlex">Jaque mate</h3>
+                <p class="textoHome">Cada pieza tiene su propio movimiento que detallamos en la seccion guias. Cuando una pieza se dirige a donde se encuentra una pieza enemiga, se dice que se la captura y la pieza enemiga se saca del tablero. Todas las piezas pueden ser capturadas excepto el rey, que es la pieza mas importante. Cuando el rey se encuentre en una posicion donde no se pueda "escapar" de la amenaza enemiga, se produce jaque mate y se termina el juego. Excisten situaciones especiales donde se producen "tablas" y el juego termina en empate, pero eso lo detallaremos mas adelante.</p>
             </article>
             <!--Fin segunda seccion-->
             </div>
